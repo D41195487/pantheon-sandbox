@@ -1,2 +1,9 @@
 project:
-  machine_name: app
+  human_name: Pantheon Demo
+  machine_name: pantheon_demo
+  local:
+    hostname: pantheon-demo.lndo.site
+    protocol: http
+    uri: ${project.local.protocol}://${project.local.hostname}
+  profile:
+    name: standard
