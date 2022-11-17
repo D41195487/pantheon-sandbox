@@ -1,0 +1,19 @@
+name: pantheon-demo
+recipe: drupal9
+config:
+  webroot: ./docroot
+services:
+  appserver:
+    # run_as_root runs as root and after your service boots up
+    run_as_root:
+      - composer config --global process-timeout 6000
+    overrides:
+      environment:
+        # Make sure things like Drush ULI work properly
+        DRUSH_OPTIONS_URI: "http://pantheon-demo.lndo.site"
+tooling:
+  blt:
+    service: appserver
+    description: "Runs BLT commands"
+    cmd:
+      - vendor/bin/blt
