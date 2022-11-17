@@ -7,3 +7,7 @@ project:
     uri: ${project.local.protocol}://${project.local.hostname}
   profile:
     name: standard
+git:
+  default_branch: main
+  remotes:
+    - ssh://codeserver.dev.1bae79b9-2a51-427f-ae76-848765e8f22f@codeserver.dev.1bae79b9-2a51-427f-ae76-848765e8f22f.drush.in:2222/~/repository.git
