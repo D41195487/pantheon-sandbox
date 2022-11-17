@@ -2,3 +2,9 @@ name: pantheon-demo
 recipe: drupal9
 config:
   webroot: ./docroot
+tooling:
+  blt:
+    service: appserver
+    description: "Runs BLT commands"
+    cmd:
+      - vendor/bin/blt
