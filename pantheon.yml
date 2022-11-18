@@ -1,0 +1,5 @@
+api_version: 1
+php_version: 8.0
+web_docroot: true
+database:
+  version: 10.6
