@@ -2,10 +2,6 @@
 #
 # earlier versions of Drupal are tracked in `community/PHP/`
 
-# Ignore configuration files that may contain sensitive information
-docroot/sites/*/*settings*.php
-docroot/sites/*/*services*.yml
-
 # Ignore paths that may contain user-generated content
 docroot/sites/*/files
 docroot/sites/*/public
